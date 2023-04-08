@@ -76,7 +76,7 @@ header {
                 }
             }
 
-            .but1 {}
+            // .but1 {}
 
             .but2 {
                 margin-left: 24px;
@@ -92,7 +92,7 @@ header {
             }
         }
 
-        .nav-fl {
+        .drk {
             #dark-light {
                 all: unset;
                 background-color: #fff;
@@ -134,16 +134,16 @@ header {
                 color: #000;
                 font-weight: 500;
                 line-height: 1;
-                transition: 0.5s;
+                // transition: 0.5s;
             }
 
             a::before {
-                content: "" attr(data-menu) "";
+                // content: "" attr(data-menu) "";
                 position: absolute;
                 z-index: 1;
                 color: #02897A;
                 width: 0px;
-                transition: 0.5s;
+                // transition: 0.5s;
                 overflow: hidden;
             }
 
@@ -1018,25 +1018,6 @@ main {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1116px) {
     header {
         .inner {
@@ -1048,7 +1029,7 @@ main {
 }
 
 @media (max-width: 970px) {
-    .nav-fl {
+    .drk {
         margin-right: 30px;
     }
 }
@@ -1073,134 +1054,17 @@ main {
     .navigation ul li {
         margin-left: 0px;
         width: 100%;
-        background: #02897A;
-        animation: liAnim 0.5s 0ms ease-in forwards;
+        background:#fff;
         transform-origin: left;
         opacity: 0;
-        transform: scaleY(0);
+   
 
         a {
             color: #fff;
         }
 
-        a::before {
-            color: #173A56;
-        }
+       
     }
-
-    .navigation ul li:nth-child(1) {
-        animation-delay: 100ms;
-    }
-
-    .navigation ul li:nth-child(2) {
-        animation-delay: 300ms;
-    }
-
-    .navigation ul li:nth-child(3) {
-        animation-delay: 500ms;
-    }
-
-    .navigation ul li:nth-child(4) {
-        animation-delay: 700ms;
-    }
-
-    .navigation ul li:nth-child(5) {
-        animation-delay: 900ms;
-    }
-
-    .navigation ul li:nth-child(6) {
-        animation-delay: 1100ms;
-    }
-
-    @keyframes liAnim {
-        0% {
-            opacity: 0;
-            transform: scaleY(0);
-        }
-
-        100% {
-            opacity: 1;
-            transform: scaleY(1);
-        }
-    }
-
-    .navigation a {
-        line-height: 1;
-        display: block;
-        color: white !important;
-        padding: 15px 10px;
-    }
-
-    .navigation a::before {
-        color: #fff;
-    }
-
-    .navigation nav {
-        display: none;
-    }
-
-    .toggle-icon {
-        display: block;
-    }
-
-    .toggle-icon {
-        position: fixed;
-        top: 6px;
-        right: 50px;
-        width: 55px;
-        height: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    }
-
-    /* hamburger css start */
-    .hamburger {
-        position: relative;
-        width: 60%;
-        height: 60%;
-        border-radius: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        margin-top: 30px;
-    }
-
-    .burger-1::before,
-    .burger-1::after {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background-color: black;
-        border-radius: 8px;
-        transition: 0.3s;
-    }
-
-    .burger-1::before {
-        transform: translateY(-10px);
-    }
-
-    #toggle-icon:checked+.toggle-icon .burger-1::before {
-        transform: translateY(0) rotate(-315deg);
-    }
-
-    .burger-1::after {
-        transform: translateY(10px);
-        box-shadow: 0 -10px 0 black;
-    }
-
-    #toggle-icon:checked+.toggle-icon .burger-1::after {
-        transform: translateY(0) rotate(-45deg);
-        box-shadow: unset;
-    }
-
-    #toggle-icon:checked~nav {
-        display: block;
-    }
-
 }
 
 @media (max-width: 930px) {
